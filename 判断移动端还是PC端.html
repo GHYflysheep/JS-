@@ -1,0 +1,20 @@
+<script type="text/javascript">
+    function br() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var isIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var isIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var isMidp = sUserAgent.match(/midp/i) == "midp";
+        var isUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var isUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var isAndroid = sUserAgent.match(/android/i) == "android";
+        var isCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var isWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (isIpad || isIphoneOs || isMidp || isUc7 || isUc || isAndroid || isCE || isWM) {
+            console.log("移动端");
+        } else {
+            console.log("pc设备");
+        }
+    }
+
+    br();
+</script>
