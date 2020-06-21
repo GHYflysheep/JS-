@@ -9,6 +9,12 @@
         if(ua.indexOf('Presto') !== -1) console.log('opera浏览器')
         if(ua.indexOf('Trident') !== -1) console.log('IE浏览器')
         if(ua.indexOf('Firefox') !== -1) console.log('火狐浏览器')
+        if(ua.indexOf('360SE') !== -1) console.log('360浏览器')
+        if(ua.indexOf('MetaSr') !== -1) console.log('搜狗浏览器')
+        if(ua.indexOf('Avant') !== -1) console.log('Avant浏览器')
+        if(ua.indexOf('UBrowser') !== -1) console.log('UBrowser浏览器')
+        if(ua.indexOf('World') !== -1) console.log('世界之窗浏览器')
+        if(ua.indexOf('Maxthon') !== -1) console.log('傲游浏览器')
         if(ua.indexOf('Safari') && ua.indexOf('Iphone') !== -1) console.log('iphone浏览器')
         if(!!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) console.log('IOS终端')
         if(ua.indexOf('Android') > -1 || ua.indexOf('Mac') > -1) console.log('安卓终端')
@@ -17,9 +23,6 @@
         if(ua.indexOf('MicroMessenger') > -1) console.log('微信')
         if(uaLower.match(/\isQQ/i) == " qq") console.log('QQ App内置浏览器')
         if(uaLower.match(/WeiBo/i) == "weibo") console.log('微博')
-        if(!!ua.match(/AppleWebKit.*Mobile.*/)) console.log('移动端')
-        if(!!ua.match(/AppleWebKit/)) console.log('终端')
-    }
     var result = browser()
     console.log(result)
 </script>
